@@ -76,9 +76,7 @@ DB_PASSWORD=********
 También Actualice los valores de mail:
 
 MAIL_MAILER=smtp
-
 MAIL_HOST=mailhog
-
 MAIL_PORT=1025
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
