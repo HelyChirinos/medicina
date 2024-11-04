@@ -1,12 +1,14 @@
 
-<center># Instalación Sistema SIPADU<center/>
 
+<p style="text-align: center;">
+# Instalación Sistema SIPADU
+</p>
   ## Requisitos
   
 
  - php 8.2 o Mayor
  -  Base de datos : MariaDB ó Mysql
-- Composer
+ - Composer
  - node.js
 
   ## Instalación
@@ -75,21 +77,21 @@ DB_PASSWORD=********<br/>
 
 También Actualice los valores de mail:
 
-MAIL_MAILER=smtp
-MAIL_HOST=mailhog
-MAIL_PORT=1025
-MAIL_USERNAME=null
-MAIL_PASSWORD=null
-MAIL_ENCRYPTION=null
-MAIL_FROM_ADDRESS=null
-MAIL_FROM_NAME="${APP_NAME}"
+MAIL_MAILER=smtp<br/>
+MAIL_HOST=mailhog<br/>
+MAIL_PORT=1025<br/>
+MAIL_USERNAME=null<br/>
+MAIL_PASSWORD=null<br/>
+MAIL_ENCRYPTION=null<br/>
+MAIL_FROM_ADDRESS=null<br/>
+MAIL_FROM_NAME="${APP_NAME}"<br/>
 
 Por ultimo, Coloque los valores correspondientes en:
 
-APP_NAME=SIPADU
-APP_DEBUG=false
-APP_TIMEZONE=America/Caracas
-APP_URL=http://medicina.test
+APP_NAME=SIPADU<br/>
+APP_DEBUG=false<br/>
+APP_TIMEZONE=America/Caracas<br/>
+APP_URL=http://medicina.test<br/>
 
 ### 8. Impotar la Base de Datos
 Utilice cualquier editor de Base de Datos e importe los datos de postgrado.sql
