@@ -84,6 +84,12 @@ MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=null
 MAIL_FROM_NAME="${APP_NAME}"
 
+Por ultimo, Coloque los valores correspondientes en:
+
+APP_NAME=SIPADU
+APP_DEBUG=false
+APP_TIMEZONE=America/Caracas
+APP_URL=http://medicina.test
 
 ### 8. Impotar la Base de Datos
 Utilice cualquier editor de Base de Datos e importe los datos de postgrado.sql
