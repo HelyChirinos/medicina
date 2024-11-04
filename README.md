@@ -1,5 +1,5 @@
 
-# Instalación Sistema SIPADU
+<center># Instalación Sistema SIPADU<center/>
 
   ## Requisitos
   
@@ -54,7 +54,7 @@ php artisan key:generate
 
   
 
-### 6. Crear una base de Datos vacia para el sistema
+### 6. Crear una base de Datos vacía para el sistema
 
 Use your favorite database management tool to create an empty database.
 
@@ -66,12 +66,12 @@ Configure a username and password.
 
 Edite el archivo .env y coloque los valores correctos de :
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=********
+DB_CONNECTION=mysql<br/>
+DB_HOST=127.0.0.1<br/>
+DB_PORT=3306<br/>
+DB_DATABASE=laravel<br/>
+DB_USERNAME=root<br/>
+DB_PASSWORD=********<br/>
 
 También Actualice los valores de mail:
 
