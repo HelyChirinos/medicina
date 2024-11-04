@@ -1,8 +1,6 @@
 
-
-<p style="text-align: center;">
 # Instalación Sistema SIPADU
-</p>
+
   ## Requisitos
   
 
