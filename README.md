@@ -1,42 +1,80 @@
 
 # Instalación Sistema SIPADU
 
+  ## Requisitos
+  
 
-## Clonar proyecto del repositorio de GitHub 
-Dentro de la carpeta Raiz del servidor web , Ingrese el comando :
+ - php 8.2 o Mayor
+ -  Base de datos : MariaDB ó Mysql
+- Composer
+ - node.js
+
+  ## Instalación
+
+### 1. Clonar proyecto del repositorio de GitHub
+
+Dentro de la carpeta Raíz del servidor web , Ingrese el comando :
+
 https://github.com/HelyChirinos/medicina.git
+
 cambie al nuevo directorio del proyecto
 
-## Installe Composer Dependencies
-Ingrese el comando: 
+  
+
+### 2. Instalar las Dependencias de Composer
+
+Ingrese el comando:
+
 composer install
 
-## Install NPM Dependencies
-Ingrese el comando: 
-npm install
-npm run dev or npm run build
+  
 
-## Create your copy of the .env file
-Enter the command :
+### 3. Instalar las Dependencias de NPM
+
+Ingrese el comando:
+
+npm install
+
+npm run build
+
+  
+### 4. Crear el archivo .env
+
+Ingrese el comando:
+
 cp .env.example .env
 
-## Generate an App Encryption Key
-Enter the command :
+  
+
+### 5. Generar el App Encryption Key
+
+Ingrese el comando:
+
 php artisan key:generate
 
-## Create an empty database for our application
+  
+
+### 6. Crear una base de Datos vacia para el sistema
+
 Use your favorite database management tool to create an empty database.
+
 Configure a username and password.
 
-## Configure the .env file
-Open the .env file for editing :
+  
+
+### 7. Configure the .env file
+
+Edite el archivo .env y coloque los valores correctos de :
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=********
-Adjust the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME and DB_PASSWORD options to match your situation. Also adjust the mail settings:
+
+También Actualice los valores de mail:
+
 MAIL_MAILER=smtp
 MAIL_HOST=mailhog
 MAIL_PORT=1025
@@ -45,8 +83,7 @@ MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=null
 MAIL_FROM_NAME="${APP_NAME}"
-Adjust the MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD, MAIL_ENCRYPTION and MAIL_FROM_ADDRESS options to match your situation.
 
-## Migrate the database
-Enter the command : :
- php artisan migrate:fresh --seed
+
+### 8. Impotar la Base de Datos
+Utilice cualquier editor de Base de Datos e importe los datos de postgrado.sql
