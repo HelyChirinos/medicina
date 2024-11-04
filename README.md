@@ -1,11 +1,12 @@
 
 # Instalación Sistema SIPADU
 
+El Sistema SIPADU fue desarrollado con laravel 11 y Bootstrap 5
+
   ## Requisitos
   
-
  - php 8.2 o Mayor
- -  Base de datos : MariaDB ó Mysql
+ - Base de datos : MariaDB ó Mysql
  - Composer
  - node.js
 
