@@ -16,13 +16,20 @@ El Sistema SIPADU fue desarrollado con laravel 11 y Bootstrap 5
 
 Dentro de la carpeta Raíz del servidor web , Ingrese el comando :
 
-https://github.com/HelyChirinos/medicina.git
+git clone https://github.com/HelyChirinos/medicina.git
 
 cambie al nuevo directorio del proyecto
 
-  
 
-### 2. Instalar las Dependencias de Composer
+
+### 2. Otorgar Permisos
+
+ejecutar los comandos:
+php artisan storage:link
+chmod -R 775 public && sudo chmod -R 777 storage
+
+
+### 3. Instalar las Dependencias de Composer
 
 Ingrese el comando:
 
@@ -30,7 +37,7 @@ composer install
 
   
 
-### 3. Instalar las Dependencias de NPM
+### 4. Instalar las Dependencias de NPM
 
 Ingrese el comando:
 
@@ -39,7 +46,7 @@ npm install
 npm run build
 
   
-### 4. Crear el archivo .env
+### 5. Crear el archivo .env
 
 Ingrese el comando:
 
@@ -47,7 +54,7 @@ cp .env.example .env
 
   
 
-### 5. Generar el App Encryption Key
+### 6. Generar el App Encryption Key
 
 Ingrese el comando:
 
@@ -55,7 +62,7 @@ php artisan key:generate
 
   
 
-### 6. Crear una base de Datos vacía para el sistema
+### 7. Crear una base de Datos vacía para el sistema
 
 Use your favorite database management tool to create an empty database.
 
@@ -63,7 +70,7 @@ Configure a username and password.
 
   
 
-### 7. Configure the .env file
+### 8. Configure the .env file
 
 Edite el archivo .env y coloque los valores correctos de :
 
@@ -85,12 +92,12 @@ MAIL_ENCRYPTION=null<br/>
 MAIL_FROM_ADDRESS=null<br/>
 MAIL_FROM_NAME="${APP_NAME}"<br/>
 
-Por ultimo, Coloque los valores correspondientes en:
+Por último, Coloque los valores correspondientes en:
 
 APP_NAME=SIPADU<br/>
 APP_DEBUG=false<br/>
 APP_TIMEZONE=America/Caracas<br/>
 APP_URL=http://medicina.test<br/>
 
-### 8. Impotar la Base de Datos
+### 9. Importar la Base de Datos
 Utilice cualquier editor de Base de Datos e importe los datos de postgrado.sql
